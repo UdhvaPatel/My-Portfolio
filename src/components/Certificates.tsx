@@ -34,15 +34,6 @@ const Certificates = () => {
       className: "[grid-area:stack] translate-x-32 translate-y-20 hover:translate-y-10",
     },
     {
-      icon: <Server className="size-4 text-tech-indigo" />,
-      title: "Cloud Computing Architect",
-      description: "AWS & Azure Services Certification",
-      date: "2022",
-      iconClassName: "text-tech-indigo",
-      titleClassName: "text-tech-indigo font-bold",
-      className: "[grid-area:stack] translate-x-48 translate-y-30 hover:translate-y-20",
-    },
-    {
       icon: <Network className="size-4 text-tech-teal" />,
       title: "DevOps Engineering",
       description: "CI/CD & Infrastructure as Code",
@@ -51,15 +42,7 @@ const Certificates = () => {
       titleClassName: "text-tech-teal font-bold",
       className: "[grid-area:stack] translate-x-64 translate-y-40 hover:translate-y-30",
     },
-    {
-      icon: <BadgeCheck className="size-4 text-accent" />,
-      title: "UI/UX Design Principles",
-      description: "Human-Computer Interaction",
-      date: "2021",
-      iconClassName: "text-accent",
-      titleClassName: "text-accent font-bold",
-      className: "[grid-area:stack] translate-x-80 translate-y-50 hover:translate-y-40",
-    },
+   
   ];
   
   // For mobile view, we'll show only the first 3 certificates
