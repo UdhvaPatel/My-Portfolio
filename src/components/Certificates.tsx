@@ -33,16 +33,6 @@ const Certificates = () => {
       titleClassName: "text-tech-cyan font-bold",
       className: "[grid-area:stack] translate-x-32 translate-y-20 hover:translate-y-10",
     },
-    {
-      icon: <Network className="size-4 text-tech-teal" />,
-      title: "DevOps Engineering",
-      description: "CI/CD & Infrastructure as Code",
-      date: "2023",
-      iconClassName: "text-tech-teal",
-      titleClassName: "text-tech-teal font-bold",
-      className: "[grid-area:stack] translate-x-64 translate-y-40 hover:translate-y-30",
-    },
-   
   ];
   
   // For mobile view, we'll show only the first 3 certificates
