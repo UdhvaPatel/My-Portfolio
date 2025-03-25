@@ -5,6 +5,7 @@ import {
   Cpu, Terminal, Cloud, Network, AppWindow, GitBranch, 
   Layers, Workflow
 } from "lucide-react";
+import { AnimatedText } from "@/components/ui/animated-text";
 
 const Skills = () => {
   const skillCategories = [
@@ -50,11 +51,14 @@ const Skills = () => {
     <section id="skills" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 circuit-pattern opacity-20"></div>
       <div className="container mx-auto px-6 relative z-10">
-        <h2 className="section-title">
-          <span className="font-mono text-tech-blue">{'<'}</span>
-          Udhva's Technical Skills
-          <span className="font-mono text-tech-blue">{'/>'}</span>
-        </h2>
+        <div className="mb-12">
+          <AnimatedText 
+            text="Udhva's Technical Skills" 
+            textClassName="text-3xl md:text-4xl font-bold"
+            underlineClassName="text-tech-indigo"
+            underlineDuration={2}
+          />
+        </div>
         
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (

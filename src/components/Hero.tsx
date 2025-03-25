@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { ArrowDown, Code, Database, Layers, Terminal, Cpu, Server, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AnimatedText } from "@/components/ui/animated-text";
 
 const Hero = () => {
   const iconRef1 = useRef<HTMLDivElement>(null);
@@ -66,9 +67,16 @@ const Hero = () => {
             <span className="text-sm font-mono text-accent font-semibold tracking-wider">&lt;MASTER'S STUDENT IN INFORMATION TECHNOLOGY/&gt;</span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in cyber-dots" style={{animationDelay: "0.2s"}}>
-            <span className="gradient-text">Udhva Patel</span>
-          </h1>
+          <div className="mb-6 animate-fade-in cyber-dots" style={{animationDelay: "0.2s"}}>
+            <AnimatedText 
+              text="Udhva Patel" 
+              textClassName="text-4xl md:text-6xl font-bold gradient-text" 
+              underlineClassName="text-tech-purple"
+              underlinePath="M 0,10 Q 75,0 150,10 Q 225,20 300,10"
+              underlineHoverPath="M 0,10 Q 75,20 150,10 Q 225,0 300,10"
+              underlineDuration={2}
+            />
+          </div>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in" style={{animationDelay: "0.4s"}}>
             <span className="font-mono text-tech-blue">&lt;</span> Computer Science graduate pursuing advanced studies in Information Technology. 
@@ -90,7 +98,7 @@ const Hero = () => {
             </a>
             <Button 
               onClick={handleResumeClick}
-              className="px-6 py-6 bg-tech-purple/90 text-white rounded-lg hover:shadow-glow-purple transition-all duration-300 cyber-border"
+              className="px-6 py-3 bg-tech-purple/90 text-white rounded-lg hover:shadow-glow-purple transition-all duration-300 cyber-border"
             >
               <FileText className="inline-block mr-2 h-4 w-4" /> View Resume
             </Button>

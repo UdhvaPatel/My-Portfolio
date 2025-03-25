@@ -1,7 +1,7 @@
-
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X, Terminal } from "lucide-react";
+import { AnimatedText } from "@/components/ui/animated-text";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,8 +38,15 @@ const Navbar = () => {
         <a href="#home" className="text-xl font-bold text-foreground flex items-center">
           <Terminal className="mr-2 text-tech-blue" />
           <span className="font-mono text-tech-blue">{'< '}</span>
-          Udhva Patel
-          <span className="font-mono text-tech-blue">{' />'}</span>
+          <AnimatedText 
+            text="Udhva Patel" 
+            className="h-auto !items-start"
+            textClassName="text-xl font-bold text-tech-blue" 
+            underlineClassName="text-tech-purple h-4"
+            underlinePath="M 0,10 Q 50,0 100,10 Q 150,20 200,10"
+            underlineHoverPath="M 0,10 Q 50,20 100,10 Q 150,0 200,10"
+          />
+          <span className="font-mono text-tech-blue ml-1">{' />'}</span>
         </a>
 
         {/* Desktop Menu */}
