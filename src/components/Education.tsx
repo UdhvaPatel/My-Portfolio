@@ -5,17 +5,17 @@ import { GraduationCap, Calendar, School } from "lucide-react";
 const Education = () => {
   const educationData = [
     {
-      degree: "Master of Science in Information Technology",
-      institution: "University of Technology",
-      years: "2022 - Present",
-      description: "Specializing in advanced data systems, cloud architecture, and artificial intelligence applications.",
-      courses: ["Advanced Database Systems", "Cloud Computing", "AI & Machine Learning", "Information Security"],
+      degree: "Master of Science in Information Technology and Management",
+      institution: "University of Texes at Dallas",
+      years: "2025 - Present",
+      description: "Developing expertise in information technology and management, focusing on data analytics, Statistics, cloud development, and system architecture.",
+      courses: ["Advanced statistics for Data Science", "Object Oriented Programming in Python", "Professional Development", "Database Foundations for Business Analytics"],
       type: "masters",
     },
     {
-      degree: "Bachelor of Science in Computer Science & Engineering",
-      institution: "Institute of Engineering",
-      years: "2018 - 2022",
+      degree: "Bachelor of Engineering in Computer Science & Engineering",
+      institution: "Gujarat Technological University",
+      years: "2020 - 2024",
       description: "Developed strong foundations in programming, algorithms, and computer systems architecture.",
       courses: ["Data Structures & Algorithms", "Operating Systems", "Software Engineering", "Computer Networks"],
       type: "bachelors",

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import { ArrowDown, Code, Database, Layers, Terminal, Cpu, Server, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -31,10 +30,7 @@ const Hero = () => {
   }, []);
 
   const handleResumeClick = () => {
-    // This would typically download or open the resume
-    alert("Resume download will be available soon!");
-    // In a real implementation, you might do something like:
-    // window.open('/resume.pdf', '_blank');
+    window.open('https://drive.google.com/file/d/1pDm-CAppMEUq478-3Ub8_DC_sYHugp9e/view?usp=sharing', '_blank');
   };
 
   return (
@@ -64,7 +60,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 z-10">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block cyber-border px-4 py-2 rounded-full mb-6 animate-fade-in bg-white/10 backdrop-blur-sm">
-            <span className="text-sm font-mono text-accent font-semibold tracking-wider">&lt;MASTER'S STUDENT IN INFORMATION TECHNOLOGY/&gt;</span>
+            <span className="text-sm font-mono text-accent font-semibold tracking-wider">&lt;MASTER'S STUDENT IN INFORMATION TECHNOLOGY AND MANAGEMENT/&gt;</span>
           </div>
           
           <div className="mb-6 animate-fade-in cyber-dots" style={{animationDelay: "0.2s"}}>
@@ -96,12 +92,12 @@ const Hero = () => {
             >
               <Terminal className="inline-block mr-2 h-4 w-4" /> Get In Touch
             </a>
-            <Button 
+            <a
               onClick={handleResumeClick}
-              className="px-6 py-3 bg-tech-purple/90 text-white rounded-lg hover:shadow-glow-purple transition-all duration-300 cyber-border"
+              className="px-6 py-3 bg-tech-purple/90 text-white rounded-lg hover:shadow-glow-purple transition-all duration-300 cyber-border cursor-pointer"
             >
               <FileText className="inline-block mr-2 h-4 w-4" /> View Resume
-            </Button>
+            </a>
           </div>
         </div>
       </div>

@@ -38,17 +38,17 @@ const Contact = () => {
     {
       icon: <Mail className="text-tech-blue" />,
       title: "Email",
-      details: "futurescholar@example.com",
+      details: "udhvapatel@gmail.com",
     },
     {
       icon: <Phone className="text-tech-purple" />,
       title: "Phone",
-      details: "+1 (555) 123-4567",
+      details: "+1 (940) 641-9903",
     },
     {
       icon: <MapPin className="text-tech-cyan" />,
       title: "Location",
-      details: "University of Technology, Innovation Campus",
+      details: "Richardson, TX",
     },
   ];
 

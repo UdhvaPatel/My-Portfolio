@@ -12,7 +12,7 @@ const About = () => {
           <div className="space-y-6 animate-fade-in-left">
             <p className="text-lg leading-relaxed">
               I'm a passionate technologist with a Bachelor's degree in Computer Science and Engineering, 
-              currently pursuing a Master's in Information Technology. My journey into the world of technology 
+              currently pursuing a Master's in Information Technology and Management. My journey into the world of technology 
               began with a curiosity about how digital systems shape our world.
             </p>
             <p className="text-lg leading-relaxed">
