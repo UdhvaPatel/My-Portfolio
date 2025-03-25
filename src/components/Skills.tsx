@@ -1,6 +1,10 @@
 
 import React from "react";
-import { Code, Database, Layout, Globe, Server, Shield, Activity } from "lucide-react";
+import { 
+  Code, Database, Layout, Globe, Server, Shield, Activity, 
+  Cpu, Terminal, Cloud, Network, AppWindow, GitBranch, 
+  Layers, Workflow
+} from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
@@ -43,26 +47,31 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-b from-white to-secondary/30">
-      <div className="container mx-auto px-6">
-        <h2 className="section-title">Technical Skills</h2>
+    <section id="skills" className="py-20 relative overflow-hidden">
+      <div className="absolute inset-0 circuit-pattern opacity-20"></div>
+      <div className="container mx-auto px-6 relative z-10">
+        <h2 className="section-title">
+          <span className="font-mono text-tech-blue">{'<'}</span>
+          Technical Skills
+          <span className="font-mono text-tech-blue">{'/>'}</span>
+        </h2>
         
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="glass-card rounded-xl p-6 hover:shadow-lg transition-all duration-300 animate-fade-in"
+              className="cyber-border glass-card rounded-xl p-6 hover:shadow-lg transition-all duration-300 animate-fade-in backdrop-blur-md bg-white/40"
               style={{ animationDelay: `${0.1 * index}s` }}
             >
               <div className={`bg-${category.color}/10 p-3 rounded-full w-fit mb-4 text-${category.color}`}>
                 {category.icon}
               </div>
               
-              <h3 className="text-xl font-bold mb-4">{category.title}</h3>
+              <h3 className="text-xl font-bold mb-4 font-mono">{category.title}</h3>
               
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, idx) => (
-                  <span key={idx} className="tech-tag">
+                  <span key={idx} className="tech-tag backdrop-blur-sm">
                     {skill}
                   </span>
                 ))}

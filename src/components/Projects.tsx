@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
-import { ExternalLink, Github, Star } from "lucide-react";
+import { ExternalLink, Github, Star, Code, Terminal, Database, Server } from "lucide-react";
+import { Card, CardContent } from "./ui/card";
 
 const Projects = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -14,6 +15,7 @@ const Projects = () => {
       github: "#",
       demo: "#",
       featured: true,
+      icon: <Server className="w-6 h-6" />,
     },
     {
       title: "Intelligent Learning Platform",
@@ -23,6 +25,7 @@ const Projects = () => {
       github: "#",
       demo: "#",
       featured: true,
+      icon: <Code className="w-6 h-6" />,
     },
     {
       title: "Cybersecurity Vulnerability Scanner",
@@ -31,6 +34,7 @@ const Projects = () => {
       tags: ["Python", "Ethical Hacking", "OWASP", "Security"],
       github: "#",
       demo: null,
+      icon: <Terminal className="w-6 h-6" />,
     },
     {
       title: "Data Visualization Dashboard",
@@ -39,6 +43,7 @@ const Projects = () => {
       tags: ["D3.js", "React", "Node.js", "Data Analytics"],
       github: "#",
       demo: "#",
+      icon: <Database className="w-6 h-6" />,
     },
     {
       title: "AI Research Assistant",
@@ -47,6 +52,7 @@ const Projects = () => {
       tags: ["Python", "NLP", "TensorFlow", "Academic APIs"],
       github: "#",
       demo: "#",
+      icon: <Code className="w-6 h-6" />,
     },
     {
       title: "Cloud Resource Management System",
@@ -55,19 +61,25 @@ const Projects = () => {
       tags: ["AWS", "Terraform", "Go", "Cloud Computing"],
       github: "#",
       demo: null,
+      icon: <Server className="w-6 h-6" />,
     },
   ];
 
   return (
-    <section id="projects" className="py-20">
-      <div className="container mx-auto px-6">
-        <h2 className="section-title">Featured Projects</h2>
+    <section id="projects" className="py-20 relative overflow-hidden">
+      <div className="absolute inset-0 hex-pattern opacity-10"></div>
+      <div className="container mx-auto px-6 relative z-10">
+        <h2 className="section-title">
+          <span className="font-mono text-tech-blue">{'<'}</span>
+          Featured Projects
+          <span className="font-mono text-tech-blue">{'/>'}</span>
+        </h2>
         
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div
+            <Card
               key={index}
-              className="group rounded-xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 animate-fade-in"
+              className="group rounded-xl overflow-hidden border-0 bg-transparent animate-fade-in cyber-border"
               style={{ animationDelay: `${0.1 * index}s` }}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
@@ -80,21 +92,25 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
                 {project.featured && (
-                  <div className="absolute top-2 right-2 bg-tech-blue text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center">
+                  <div className="absolute top-2 right-2 bg-tech-blue text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center backdrop-blur-sm">
                     <Star size={12} className="mr-1" />
                     Featured
                   </div>
                 )}
                 
+                <div className="absolute top-2 left-2 bg-black/40 backdrop-blur-sm text-white p-2 rounded-full">
+                  {project.icon}
+                </div>
+                
                 <div className="absolute bottom-0 left-0 w-full p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <div className="flex space-x-3">
                     {project.github && (
-                      <a href={project.github} className="p-2 rounded-full bg-black/50 hover:bg-black/80 transition-colors">
+                      <a href={project.github} className="p-2 rounded-full bg-black/50 hover:bg-black/80 transition-colors backdrop-blur-sm">
                         <Github size={16} />
                       </a>
                     )}
                     {project.demo && (
-                      <a href={project.demo} className="p-2 rounded-full bg-black/50 hover:bg-black/80 transition-colors">
+                      <a href={project.demo} className="p-2 rounded-full bg-black/50 hover:bg-black/80 transition-colors backdrop-blur-sm">
                         <ExternalLink size={16} />
                       </a>
                     )}
@@ -102,19 +118,19 @@ const Projects = () => {
                 </div>
               </div>
               
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              <CardContent className="p-6 glass-card backdrop-blur-md bg-white/60">
+                <h3 className="text-xl font-bold mb-2 font-mono">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mt-4">
                   {project.tags.map((tag, idx) => (
-                    <span key={idx} className="tech-tag text-xs">
+                    <span key={idx} className="tech-tag text-xs backdrop-blur-sm">
                       {tag}
                     </span>
                   ))}
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>

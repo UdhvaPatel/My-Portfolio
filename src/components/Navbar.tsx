@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Code, Terminal } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,15 +30,16 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4 px-6 md:px-12",
         scrolled
-          ? "bg-white/80 backdrop-blur-md shadow-md"
+          ? "bg-white/70 backdrop-blur-md shadow-md"
           : "bg-transparent"
       )}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="#home" className="text-xl font-bold text-foreground">
-          <span className="font-mono">{'< '}</span>
+        <a href="#home" className="text-xl font-bold text-foreground flex items-center">
+          <Terminal className="mr-2 text-tech-blue" />
+          <span className="font-mono text-tech-blue">{'< '}</span>
           Future Scholar
-          <span className="font-mono">{' />'}</span>
+          <span className="font-mono text-tech-blue">{' />'}</span>
         </a>
 
         {/* Desktop Menu */}
@@ -47,9 +48,9 @@ const Navbar = () => {
             <a
               key={item.id}
               href={`#${item.id}`}
-              className="text-foreground hover:text-accent transition-colors relative group"
+              className="text-foreground hover:text-accent transition-colors relative group font-mono"
             >
-              {item.label}
+              {`<${item.label}/>`}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
@@ -72,10 +73,10 @@ const Navbar = () => {
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className="text-foreground hover:text-accent transition-colors py-2"
+                className="text-foreground hover:text-accent transition-colors py-2 font-mono"
                 onClick={() => setIsOpen(false)}
               >
-                {item.label}
+                {`<${item.label}/>`}
               </a>
             ))}
           </div>
