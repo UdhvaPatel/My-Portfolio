@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { Menu, X, Code, Terminal } from "lucide-react";
+import { Menu, X, Terminal } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +38,7 @@ const Navbar = () => {
         <a href="#home" className="text-xl font-bold text-foreground flex items-center">
           <Terminal className="mr-2 text-tech-blue" />
           <span className="font-mono text-tech-blue">{'< '}</span>
-          Future Scholar
+          Udhva Patel
           <span className="font-mono text-tech-blue">{' />'}</span>
         </a>
 

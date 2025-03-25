@@ -52,7 +52,7 @@ const Skills = () => {
       <div className="container mx-auto px-6 relative z-10">
         <h2 className="section-title">
           <span className="font-mono text-tech-blue">{'<'}</span>
-          Technical Skills
+          Udhva's Technical Skills
           <span className="font-mono text-tech-blue">{'/>'}</span>
         </h2>
         

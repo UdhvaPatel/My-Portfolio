@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from "react";
-import { ArrowDown, Code, Database, Layers, Terminal, Cpu, Server } from "lucide-react";
+import { ArrowDown, Code, Database, Layers, Terminal, Cpu, Server, FileText } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   const iconRef1 = useRef<HTMLDivElement>(null);
@@ -27,6 +28,13 @@ const Hero = () => {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
+
+  const handleResumeClick = () => {
+    // This would typically download or open the resume
+    alert("Resume download will be available soon!");
+    // In a real implementation, you might do something like:
+    // window.open('/resume.pdf', '_blank');
+  };
 
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center relative overflow-hidden pt-20 matrix-bg">
@@ -59,7 +67,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in cyber-dots" style={{animationDelay: "0.2s"}}>
-            Crafting the <span className="gradient-text">Digital Future</span> Through <span className="font-mono">Technology</span>
+            <span className="gradient-text">Udhva Patel</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in" style={{animationDelay: "0.4s"}}>
@@ -80,6 +88,12 @@ const Hero = () => {
             >
               <Terminal className="inline-block mr-2 h-4 w-4" /> Get In Touch
             </a>
+            <Button 
+              onClick={handleResumeClick}
+              className="px-6 py-6 bg-tech-purple/90 text-white rounded-lg hover:shadow-glow-purple transition-all duration-300 cyber-border"
+            >
+              <FileText className="inline-block mr-2 h-4 w-4" /> View Resume
+            </Button>
           </div>
         </div>
       </div>
