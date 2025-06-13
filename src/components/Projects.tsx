@@ -41,7 +41,7 @@ const Projects = () => {
       description: "A Python-based analyzer using OOP to evaluate 12,000+ ad records, delivering insights with matplotlib and seaborn.",
       image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5hbHlzaXN8ZW58MHx8MHx8fDA%3D",
       tags: ["Python", "OOP", "Matplotlib", "Seaborn", "Jupyter Notebook"],
-      github: "#",
+      github: "https://github.com/UdhvaPatel/Ad-Analytics.git",
       demo: null,
       featured: false,
       icon: <Code className="w-6 h-6" />,
