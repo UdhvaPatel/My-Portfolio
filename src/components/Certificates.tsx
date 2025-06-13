@@ -4,9 +4,9 @@ import { Card, CardContent } from "./ui/card";
 
 const certificates = [
   {
-    title: "IBM Data Science Professional Certificate",
-    image: "https://www.hackerrank.com/certificates/iframe/48597396a402",
-    link: "https://coursera.org/verify/IBM-DSP-Certificate-Link",
+    title: "IBM Tools For Data Science by Courseera",
+    image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/Tools%20for%20Data%20Science%20V2.png?raw=true",
+    link: "https://www.credly.com/badges/56886a2c-9feb-4f51-a60f-eaeb3dd5a8f9/linked_in_profile",
   },
   {
     title: "HackerRank Problem Solving (Basic)",
@@ -14,7 +14,7 @@ const certificates = [
     link: "https://www.hackerrank.com/certificates/48597396a402",
   },
   {
-    title: "Data Science Orientation by IBM",
+    title: "IBM Data Science Orientation by Coursera",
     image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/Data%20Science%20Orientation.png?raw=true",
     link: "https://www.credly.com/badges/68f47021-a8b0-422e-884b-49f1a3039a3f/linked_in_profile",
   },
