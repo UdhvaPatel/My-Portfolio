@@ -18,22 +18,13 @@ const Projects = () => {
       icon: <Code className="w-6 h-6" />,
     },
     {
-      title: "Raah-INDIA NGO Portal",
-      description: "Raah, built on the MERN stack, offers a dynamic and user-centric navigation experience with real-time updates and interactive maps, enhancing exploration and streamlining navigation.",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
-      tags: ["React.js", "MongoDB", "JavaScript", "MERN Stack", "TypeScript"],
-      github: null,
-      demo: "https://www.raahindia.in/",
-      icon: <Server className="w-6 h-6" />,
-    },
-    {
       title: "HealthConnect – Appointment Scheduler",
       description: "A MySQL-based hospital appointment system with 15+ tables, procedures, and triggers for efficient scheduling and reduced conflicts.",
       image: "https://plus.unsplash.com/premium_photo-1664297989345-f4ff2063b212?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       tags: ["MySQL", "SQL Triggers", "Database Design", "Stored Procedures"],
       github: "https://github.com/UdhvaPatel/HealthConnect---Hospital-Appointment-Scheduling-System.git",
       demo: null,
-      featured: false,
+      featured: true,
       icon: <Database className="w-6 h-6" />,
     },
     {
@@ -43,8 +34,17 @@ const Projects = () => {
       tags: ["Python", "OOP", "Matplotlib", "Seaborn", "Jupyter Notebook"],
       github: "https://github.com/UdhvaPatel/Ad-Analytics.git",
       demo: null,
-      featured: false,
+      featured: true,
       icon: <Code className="w-6 h-6" />,
+    },
+    {
+      title: "Raah-INDIA NGO Portal",
+      description: "Raah, built on the MERN stack, offers a dynamic and user-centric navigation experience with real-time updates and interactive maps, enhancing exploration and streamlining navigation.",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      tags: ["React.js", "MongoDB", "JavaScript", "MERN Stack", "TypeScript"],
+      github: null,
+      demo: "https://www.raahindia.in/",
+      icon: <Server className="w-6 h-6" />,
     },
 
 
