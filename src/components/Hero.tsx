@@ -30,7 +30,7 @@ const Hero = () => {
   }, []);
 
   const handleResumeClick = () => {
-    window.open('https://drive.google.com/file/d/1pDm-CAppMEUq478-3Ub8_DC_sYHugp9e/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1oQj1oMQV8W9YWfcS3d6Lg0SVeuBHHBf_/view?usp=sharing', '_blank');
   };
 
   return (
