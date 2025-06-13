@@ -5,17 +5,17 @@ import { Card, CardContent } from "./ui/card";
 const certificates = [
   {
     title: "IBM Data Science Professional Certificate",
-    issuer: "IBM via Coursera",
+    image: "https://www.hackerrank.com/certificates/iframe/48597396a402",
     link: "https://coursera.org/verify/IBM-DSP-Certificate-Link",
   },
   {
     title: "HackerRank Problem Solving (Basic)",
-    issuer: "HackerRank",
-    link: "https://www.hackerrank.com/certificates/problem-solving-basic-link",
+    image: "https://www.hackerrank.com/certificates/iframe/48597396a402",
+    link: "https://www.hackerrank.com/certificates/48597396a402",
   },
   {
-    title: "React (Basic)",
-    issuer: "HackerRank",
+    title: "React (Basic) – HackerRank",
+    image: "https://www.hackerrank.com/certificates/iframe/48597396a402",
     link: "https://www.hackerrank.com/certificates/react-basic-link",
   },
 ];
@@ -38,20 +38,29 @@ const Certificates = () => {
               className="group rounded-xl overflow-hidden border-0 bg-transparent animate-fade-in cyber-border"
               style={{ animationDelay: `${0.1 * index}s` }}
             >
-              <CardContent className="p-6 glass-card backdrop-blur-md bg-white/60 flex flex-col h-full justify-between">
-                <div className="flex items-center mb-4">
-                  <Award className="w-6 h-6 text-tech-blue mr-3" />
-                  <h3 className="text-lg font-bold font-mono">{cert.title}</h3>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center">
+                  <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mb-4 text-white font-semibold text-sm px-4 py-2 bg-black/50 hover:bg-black/70 rounded backdrop-blur-sm"
+                  >
+                    View Certificate
+                  </a>
                 </div>
-                <p className="text-sm text-muted-foreground mb-4">{cert.issuer}</p>
-                <a
-                  href={cert.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-tech-blue text-sm font-semibold hover:underline"
-                >
-                  View Certificate
-                </a>
+              </div>
+
+              <CardContent className="p-4 glass-card backdrop-blur-md bg-white/60">
+                <div className="flex items-center mb-2">
+                  <Award className="w-5 h-5 text-tech-blue mr-2" />
+                  <h3 className="text-base font-bold font-mono">{cert.title}</h3>
+                </div>
               </CardContent>
             </Card>
           ))}
