@@ -10,7 +10,7 @@ const certificates = [
   },
   {
     title: "HackerRank Problem Solving (Basic)",
-    image: "https://www.hackerrank.com/certificates/iframe/48597396a402",
+    image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/HackerRank%20Problem%20Solving(Basic).png",
     link: "https://www.hackerrank.com/certificates/48597396a402",
   },
   {
