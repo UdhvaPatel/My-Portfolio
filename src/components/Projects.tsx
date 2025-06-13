@@ -26,6 +26,28 @@ const Projects = () => {
       demo: "https://www.raahindia.in/",
       icon: <Server className="w-6 h-6" />,
     },
+    {
+      title: "HealthConnect – Appointment Scheduler",
+      description: "A MySQL-based hospital appointment system with 15+ tables, procedures, and triggers for efficient scheduling and reduced conflicts.",
+      image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+      tags: ["MySQL", "SQL Triggers", "Database Design", "Stored Procedures"],
+      github: "#",
+      demo: null,
+      featured: false,
+      icon: <Database className="w-6 h-6" />,
+    },
+    {
+      title: "Ad-Analytics – Ad Performance Analyzer",
+      description: "A Python-based analyzer using OOP to evaluate 12,000+ ad records, delivering insights with matplotlib and seaborn.",
+      image: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+      tags: ["Python", "OOP", "Matplotlib", "Seaborn", "Jupyter Notebook"],
+      github: "#",
+      demo: null,
+      featured: false,
+      icon: <Code className="w-6 h-6" />,
+    },
+
+
     // {
     //   title: "Intelligent Learning Platform",
     //   description: "An adaptive learning system that personalizes content based on student performance and learning patterns.",
