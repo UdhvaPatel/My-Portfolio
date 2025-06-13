@@ -14,9 +14,9 @@ const certificates = [
     link: "https://www.hackerrank.com/certificates/48597396a402",
   },
   {
-    title: "React (Basic) – HackerRank",
-    image: "https://www.hackerrank.com/certificates/iframe/48597396a402",
-    link: "https://www.hackerrank.com/certificates/react-basic-link",
+    title: "Data Science Orientation by IBM",
+    image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/Data%20Science%20Orientation.png?raw=true",
+    link: "https://www.credly.com/badges/68f47021-a8b0-422e-884b-49f1a3039a3f/linked_in_profile",
   },
 ];
 
