@@ -29,7 +29,7 @@ const Projects = () => {
     {
       title: "HealthConnect – Appointment Scheduler",
       description: "A MySQL-based hospital appointment system with 15+ tables, procedures, and triggers for efficient scheduling and reduced conflicts.",
-      image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+      image: "https://plus.unsplash.com/premium_photo-1664297989345-f4ff2063b212?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       tags: ["MySQL", "SQL Triggers", "Database Design", "Stored Procedures"],
       github: "#",
       demo: null,
