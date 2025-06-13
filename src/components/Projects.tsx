@@ -31,7 +31,7 @@ const Projects = () => {
       description: "A MySQL-based hospital appointment system with 15+ tables, procedures, and triggers for efficient scheduling and reduced conflicts.",
       image: "https://plus.unsplash.com/premium_photo-1664297989345-f4ff2063b212?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       tags: ["MySQL", "SQL Triggers", "Database Design", "Stored Procedures"],
-      github: "#",
+      github: "https://github.com/UdhvaPatel/HealthConnect---Hospital-Appointment-Scheduling-System.git",
       demo: null,
       featured: false,
       icon: <Database className="w-6 h-6" />,
