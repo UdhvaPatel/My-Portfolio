@@ -1,69 +1,60 @@
-
 import React from "react";
-import { AnimatedText } from "@/components/ui/animated-text";
-import DisplayCards from "@/components/ui/display-cards";
-import { BadgeCheck, Code, Database, Shield, Server, Network } from "lucide-react";
+import { Award } from "lucide-react";
+import { Card, CardContent } from "./ui/card";
+
+const certificates = [
+  {
+    title: "IBM Data Science Professional Certificate",
+    issuer: "IBM via Coursera",
+    link: "https://coursera.org/verify/IBM-DSP-Certificate-Link",
+  },
+  {
+    title: "HackerRank Problem Solving (Basic)",
+    issuer: "HackerRank",
+    link: "https://www.hackerrank.com/certificates/problem-solving-basic-link",
+  },
+  {
+    title: "React (Basic)",
+    issuer: "HackerRank",
+    link: "https://www.hackerrank.com/certificates/react-basic-link",
+  },
+];
 
 const Certificates = () => {
-  const certificateCards = [
-    {
-      icon: <Code className="size-4 text-tech-blue" />,
-      title: "Advanced Web Development",
-      description: "Full Stack JavaScript Specialization",
-      date: "2023",
-      iconClassName: "text-tech-blue",
-      titleClassName: "text-tech-blue font-bold",
-      className: "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration:700 hover:grayscale-0 before:left-0 before:top-0",
-    },
-    {
-      icon: <Database className="size-4 text-tech-purple" />,
-      title: "Data Science Professional",
-      description: "Machine Learning & Data Analysis",
-      date: "2022",
-      iconClassName: "text-tech-purple",
-      titleClassName: "text-tech-purple font-bold",
-      className: "[grid-area:stack] translate-x-16 translate-y-10 hover:-translate-y-1 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration:700 hover:grayscale-0 before:left-0 before:top-0",
-    },
-    {
-      icon: <Shield className="size-4 text-tech-cyan" />,
-      title: "Cybersecurity Fundamentals",
-      description: "Network Security & Ethical Hacking",
-      date: "2021",
-      iconClassName: "text-tech-cyan",
-      titleClassName: "text-tech-cyan font-bold",
-      className: "[grid-area:stack] translate-x-32 translate-y-20 hover:translate-y-10",
-    },
-  ];
-  
-  // For mobile view, we'll show only the first 3 certificates
-  const mobileCards = certificateCards.slice(0, 3);
-
   return (
     <section id="certificates" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 circuit-pattern opacity-10"></div>
+      <div className="absolute inset-0 hex-pattern opacity-10"></div>
       <div className="container mx-auto px-6 relative z-10">
-        <div className="mb-12 text-center">
-          <AnimatedText 
-            text="Professional Certifications" 
-            textClassName="text-3xl md:text-4xl font-bold"
-            underlineClassName="text-tech-indigo"
-            underlineDuration={2}
-          />
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            Recognized achievements and specialized training that enhance Udhva's technical expertise
-          </p>
-        </div>
-        
-        <div className="flex justify-center mt-20 mb-10">
-          {/* Display all certificates on desktop */}
-          <div className="hidden md:block w-full max-w-4xl">
-            <DisplayCards cards={certificateCards} />
-          </div>
-          
-          {/* Display only 3 certificates on mobile */}
-          <div className="block md:hidden w-full max-w-4xl">
-            <DisplayCards cards={mobileCards} />
-          </div>
+        <h2 className="section-title">
+          <span className="font-mono text-tech-blue">{'<'}</span>
+          Certificates
+          <span className="font-mono text-tech-blue">{'/>'}</span>
+        </h2>
+
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {certificates.map((cert, index) => (
+            <Card
+              key={index}
+              className="group rounded-xl overflow-hidden border-0 bg-transparent animate-fade-in cyber-border"
+              style={{ animationDelay: `${0.1 * index}s` }}
+            >
+              <CardContent className="p-6 glass-card backdrop-blur-md bg-white/60 flex flex-col h-full justify-between">
+                <div className="flex items-center mb-4">
+                  <Award className="w-6 h-6 text-tech-blue mr-3" />
+                  <h3 className="text-lg font-bold font-mono">{cert.title}</h3>
+                </div>
+                <p className="text-sm text-muted-foreground mb-4">{cert.issuer}</p>
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-tech-blue text-sm font-semibold hover:underline"
+                >
+                  View Certificate
+                </a>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
