@@ -7,7 +7,16 @@ const Projects = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const projects = [
-    
+    {
+      title: "Customer Churn Prediction - Machine Learning Model",
+      description: "A fullstack ML-powered web app that predicts customer churn with dynamic risk factors and personalized recommendations using a Flask backend and React frontend.",
+      image: "https://www.kdnuggets.com/wp-content/uploads/tayo_8_best_libraries_machine_learning_explained_1.jpg",
+      tags: ["React", "Flask", "scikit-learn", "Tailwind CSS", "Vercel", "Render"],
+      github: "https://github.com/UdhvaPatel/predict-customer-churn",
+      demo: "https://predict-customer-churn.vercel.app/",
+      featured: true,
+      icon: <Terminal className="w-6 h-6" />,
+    },
     {
       title: "CodeCrafter - AI Assistant",
       description: "A natural language processing tool that helps Coders find relevant code snippets and generate code.",
