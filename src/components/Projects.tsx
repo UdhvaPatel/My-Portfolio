@@ -46,12 +46,23 @@ const Projects = () => {
       demo: "https://www.raahindia.in/",
       icon: <Server className="w-6 h-6" />,
     },
+    {
+      title: "Customer Churn Prediction AI App",
+      description:
+        "A fullstack ML-powered web app that predicts customer churn with dynamic risk factors and personalized recommendations using a Flask backend and React frontend.",
+      image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/ML.jpg?raw=true",
+      tags: ["React", "Flask", "scikit-learn", "Tailwind CSS", "Vercel", "Render"],
+      github: "https://github.com/UdhvaPatel/predict-customer-churn",
+      demo: "https://predict-customer-churn.vercel.app/",
+      featured: true,
+      icon: <Zap className="w-6 h-6" />,
+    },
 
 
     // {
     //   title: "Intelligent Learning Platform",
     //   description: "An adaptive learning system that personalizes content based on student performance and learning patterns.",
-    //   image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+    //   image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/ML.jpg?raw=true",
     //   tags: ["Python", "Django", "React", "Machine Learning"],
     //   github: "#",
     //   demo: "#",
