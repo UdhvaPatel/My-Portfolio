@@ -8,6 +8,17 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Customer Churn Prediction - Machine Learning Model",
+      description:
+        "A fullstack ML-powered web app that predicts customer churn with dynamic risk factors and personalized recommendations using a Flask backend and React frontend.",
+      image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/ML.jpg?raw=true",
+      tags: ["React", "Flask", "scikit-learn", "Tailwind CSS", "Vercel", "Render"],
+      github: "https://github.com/UdhvaPatel/predict-customer-churn",
+      demo: "https://predict-customer-churn.vercel.app/",
+      featured: true,
+      icon: <Zap className="w-6 h-6" />,
+    },
+    {
       title: "CodeCrafter - AI Assistant",
       description: "A natural language processing tool that helps Coders find relevant code snippets and generate code.",
       image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
@@ -46,18 +57,7 @@ const Projects = () => {
       demo: "https://www.raahindia.in/",
       icon: <Server className="w-6 h-6" />,
     },
-    {
-      title: "Customer Churn Prediction AI App",
-      description:
-        "A fullstack ML-powered web app that predicts customer churn with dynamic risk factors and personalized recommendations using a Flask backend and React frontend.",
-      image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/ML.jpg?raw=true",
-      tags: ["React", "Flask", "scikit-learn", "Tailwind CSS", "Vercel", "Render"],
-      github: "https://github.com/UdhvaPatel/predict-customer-churn",
-      demo: "https://predict-customer-churn.vercel.app/",
-      featured: true,
-      icon: <Zap className="w-6 h-6" />,
-    },
-
+    
 
     // {
     //   title: "Intelligent Learning Platform",
