@@ -18,16 +18,6 @@ const Projects = () => {
       icon: <Terminal className="w-6 h-6" />,
     },
     {
-      title: "CodeCrafter - AI Assistant",
-      description: "A natural language processing tool that helps Coders find relevant code snippets and generate code.",
-      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
-      tags: ["Next.js", "Clerk", "Shadcn-UI", "Google Gemini API", "Tailwind CSS"],
-      github: "https://github.com/UdhvaPatel/codecrafter.git",
-      demo: "https://codecrafter-app.vercel.app/",
-      featured: true,
-      icon: <Code className="w-6 h-6" />,
-    },
-    {
       title: "HealthConnect – Appointment Scheduler",
       description: "A MySQL-based hospital appointment system with 15+ tables, procedures, and triggers for efficient scheduling and reduced conflicts.",
       image: "https://plus.unsplash.com/premium_photo-1664297989345-f4ff2063b212?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -48,6 +38,16 @@ const Projects = () => {
       icon: <Code className="w-6 h-6" />,
     },
     {
+      title: "Big Data Migration & Virtual Machine Analytics",
+      description: "A large-scale data engineering and analytics project where high-volume datasets were migrated into a Linux-based Virtual Machine, processed through ETL pipelines, and visualized to solve real-world analytical problems and support data-driven decision making.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+      tags: ["Python", "SQL", "Virtual Machine", "Linux", "ETL", "Pandas", "NumPy", "Data Visualization", "Power BI", "Shell Scripting"],
+      github: "https://github.com/your-username/big-data-vm-analytics",
+      demo: "",
+      featured: true,
+      icon: <Database className="w-6 h-6" />,
+    }    
+    {
       title: "Raah-INDIA NGO Portal",
       description: "Raah, built on the MERN stack, offers a dynamic and user-centric navigation experience with real-time updates and interactive maps, enhancing exploration and streamlining navigation.",
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
@@ -55,6 +55,16 @@ const Projects = () => {
       github: null,
       demo: "https://www.raahindia.in/",
       icon: <Server className="w-6 h-6" />,
+    },
+    {
+      title: "CodeCrafter - AI Assistant",
+      description: "A natural language processing tool that helps Coders find relevant code snippets and generate code.",
+      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
+      tags: ["Next.js", "Clerk", "Shadcn-UI", "Google Gemini API", "Tailwind CSS"],
+      github: "https://github.com/UdhvaPatel/codecrafter.git",
+      demo: "https://codecrafter-app.vercel.app/",
+      featured: true,
+      icon: <Code className="w-6 h-6" />,
     },
     
 
