@@ -5,7 +5,7 @@ import { Card, CardContent } from "./ui/card";
 const certificates = [
   {
     title: "Vista Equity Partners – AI in Action Job Simulation (Forage)",
-    image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/AI%20in%20Action.png",
+    image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/AI%20in%20Action.png?raw=true",
     link: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/AI%20in%20Action.png",
   },
   {
