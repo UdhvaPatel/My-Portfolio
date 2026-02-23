@@ -40,7 +40,7 @@ const Projects = () => {
     {
       title: "Big Data Migration & Virtual Machine Analytics",
       description: "A large-scale data engineering and analytics project where high-volume datasets were migrated into a Linux-based Virtual Machine, processed through ETL pipelines, and visualized to solve real-world analytical problems and support data-driven decision making.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+      image: "https://www.kdnuggets.com/wp-content/uploads/tayo_8_best_libraries_machine_learning_explained_1.jpg",
       tags: ["Python", "SQL", "Virtual Machine", "Linux", "ETL", "Pandas", "NumPy", "Data Visualization", "Power BI", "Shell Scripting"],
       github: "",
       demo: "",
