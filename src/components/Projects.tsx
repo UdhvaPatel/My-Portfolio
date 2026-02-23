@@ -46,7 +46,7 @@ const Projects = () => {
       demo: "",
       featured: true,
       icon: <Database className="w-6 h-6" />,
-    }    
+    },    
     {
       title: "Raah-INDIA NGO Portal",
       description: "Raah, built on the MERN stack, offers a dynamic and user-centric navigation experience with real-time updates and interactive maps, enhancing exploration and streamlining navigation.",
