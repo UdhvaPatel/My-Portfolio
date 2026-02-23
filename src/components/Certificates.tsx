@@ -20,8 +20,8 @@ const certificates = [
   },
   {
     title: "Vista Equity Partners – AI in Action Job Simulation (Forage)",
-    image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/Tools%20for%20Data%20Science%20V2.png?raw=true",
-    link: "https://www.credly.com/badges/56886a2c-9feb-4f51-a60f-eaeb3dd5a8f9/linked_in_profile",
+    image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/AI%20in%20Action.png",
+    link: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/AI%20in%20Action.png",
   },
 ];
 
