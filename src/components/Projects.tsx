@@ -37,16 +37,7 @@ const Projects = () => {
       featured: true,
       icon: <Code className="w-6 h-6" />,
     },
-    {
-      title: "Big Data Migration & Virtual Machine Analytics",
-      description: "A large-scale data engineering and analytics project where high-volume datasets were migrated into a Linux-based Virtual Machine, processed through ETL pipelines, and visualized to solve real-world analytical problems and support data-driven decision making.",
-      image: "https://www.kdnuggets.com/wp-content/uploads/tayo_8_best_libraries_machine_learning_explained_1.jpg",
-      tags: ["Python", "SQL", "Virtual Machine", "Linux", "ETL", "Pandas", "NumPy", "Data Visualization", "Power BI", "Shell Scripting"],
-      github: "",
-      demo: "",
-      featured: true,
-      icon: <Database className="w-6 h-6" />,
-    },    
+     
     {
       title: "Raah-INDIA NGO Portal",
       description: "Raah, built on the MERN stack, offers a dynamic and user-centric navigation experience with real-time updates and interactive maps, enhancing exploration and streamlining navigation.",
