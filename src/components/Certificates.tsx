@@ -4,6 +4,11 @@ import { Card, CardContent } from "./ui/card";
 
 const certificates = [
   {
+    title: "Vista Equity Partners – AI in Action Job Simulation (Forage)",
+    image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/AI%20in%20Action.png",
+    link: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/AI%20in%20Action.png",
+  },
+  {
     title: "IBM Tools For Data Science by Courseera",
     image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/Tools%20for%20Data%20Science%20V2.png?raw=true",
     link: "https://www.credly.com/badges/56886a2c-9feb-4f51-a60f-eaeb3dd5a8f9/linked_in_profile",
@@ -18,11 +23,7 @@ const certificates = [
     image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/Data%20Science%20Orientation.png?raw=true",
     link: "https://www.credly.com/badges/68f47021-a8b0-422e-884b-49f1a3039a3f/linked_in_profile",
   },
-  {
-    title: "Vista Equity Partners – AI in Action Job Simulation (Forage)",
-    image: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/AI%20in%20Action.png",
-    link: "https://github.com/UdhvaPatel/My-Portfolio/blob/main/public/AI%20in%20Action.png",
-  },
+  
 ];
 
 const Certificates = () => {
