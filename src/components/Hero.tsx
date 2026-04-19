@@ -29,9 +29,9 @@ const Hero = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  const handleResumeClick = () => {
-    window.open('https://drive.google.com/file/d/1lQsmGPWs8GPTaC-GyOjki6C_pEI8Rqfh/view?usp=sharing', '_blank');
-  };
+ // const handleResumeClick = () => {
+  //  window.open('https://drive.google.com/file/d/1lQsmGPWs8GPTaC-GyOjki6C_pEI8Rqfh/view?usp=sharing', '_blank');
+//  };
 
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center relative overflow-hidden pt-20 matrix-bg">
