@@ -92,12 +92,12 @@ const Hero = () => {
             >
               <Terminal className="inline-block mr-2 h-4 w-4" /> Get In Touch
             </a>
-            {/* <a
+             {/* <a
               // onClick={handleResumeClick}
               className="px-6 py-3 bg-tech-purple/90 text-white rounded-lg hover:shadow-glow-purple transition-all duration-300 cyber-border cursor-pointer"
-            >
+            > */}
               {/* <FileText className="inline-block mr-2 h-4 w-4" /> View Resume */}
-            </a> */}
+            {/* </a> */} 
           </div>
         </div>
       </div>
